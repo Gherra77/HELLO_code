@@ -80,106 +80,106 @@ while (index <= number)
 {
    System.Console.Write(index++);
 }
-}// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-// 456 -> 5
-// 782 -> 8
-// 918 -> 1
+}Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+456 -> 5
+782 -> 8
+918 -> 1
 
 
-// void SecondDigit ()
-// {    
-//     int num = Convert.ToInt32(Console.ReadLine());
-//     if (num > 99 && num < 1000) 
-//     {        
-//     num = ((num / 10) % 10);
-//     System.Console.WriteLine(num);
-//     }
-//     else
-//     {
-//      System.Console.WriteLine("Введенное число не является трехзначным");
-//     }      
-// }
-// System.Console.WriteLine("Введите трехзначное число: ");
-// SecondDigit ();
+void SecondDigit ()
+{    
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num > 99 && num < 1000) 
+    {        
+    num = ((num / 10) % 10);
+    System.Console.WriteLine(num);
+    }
+    else
+    {
+     System.Console.WriteLine("Введенное число не является трехзначным");
+    }      
+}
+System.Console.WriteLine("Введите трехзначное число: ");
+SecondDigit ();
 
 
 
-// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-// 645 -> 5
-// 78 -> третьей цифры нет
-// 32679 -> 6
+Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+645 -> 5
+78 -> третьей цифры нет
+32679 -> 6
 
 
-// void ThirdDigit ()
-// {
-//     int num = Convert.ToInt32(Console.ReadLine());
-//     int size = 0;
-//     if (num / 100 < 1)
-//     {
-//     System.Console.WriteLine("Введенное число двухзначное");
-//     System.Console.WriteLine("Невозможно вывести третью цифру числа");
-//     }
-//     else
-//     {  
-//         while (num >= 1)
-//         {
-//         num = num / 10;          
-//         size = size + 1;
-//             if (num > 99 && num < 1000)
-//             {
-//             System.Console.WriteLine($"Третья цифра данного числа = {num % 10}");
-//             }
-//         }
-//     }
+void ThirdDigit ()
+{
+    int num = Convert.ToInt32(Console.ReadLine());
+    int size = 0;
+    if (num / 100 < 1)
+    {
+    System.Console.WriteLine("Введенное число двухзначное");
+    System.Console.WriteLine("Невозможно вывести третью цифру числа");
+    }
+    else
+    {  
+        while (num >= 1)
+        {
+        num = num / 10;          
+        size = size + 1;
+            if (num > 99 && num < 1000)
+            {
+            System.Console.WriteLine($"Третья цифра данного числа = {num % 10}");
+            }
+        }
+    }
             
-// }
-// System.Console.WriteLine("Введите число: ");
-// ThirdDigit ();
+}
+System.Console.WriteLine("Введите число: ");
+ThirdDigit ();
 
 
 
 
-// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-// 6 -> да
-// 7 -> да
-// 1 -> нет
+Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+6 -> да
+7 -> да
+1 -> нет
 
 
-// void DayOff ()
-// {    
-//     int num = Convert.ToInt32(Console.ReadLine());
-//     if (num > 1 && num < 8)
-//     {
-//            if (num > 1 && num < 6)
-//            {
-//             System.Console.WriteLine("Не выходной день");
-//            }
-//            else
-//            {
-//             System.Console.WriteLine("Выходной день");
-//            }
+void DayOff ()
+{    
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num > 1 && num < 8)
+    {
+           if (num > 1 && num < 6)
+           {
+            System.Console.WriteLine("Не выходной день");
+           }
+           else
+           {
+            System.Console.WriteLine("Выходной день");
+           }
 
-//         }
-//     else
-//     {
-//      System.Console.WriteLine("Данное число не является днем недели");
-//     }      
-// }
-// System.Console.WriteLine("Введите день недели");
-// DayOff ();
-
-
+        }
+    else
+    {
+     System.Console.WriteLine("Данное число не является днем недели");
+    }      
+}
+System.Console.WriteLine("Введите день недели");
+DayOff ();
 
 
-//   !!!! Определение количества символов в введенной цифре.
 
-//    System.Console.WriteLine("Введите число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int size = 0;
-// while (num >= 1)
-// {
-// num = num / 10;          
-//  size = size + 1;
-// }
-// System.Console.WriteLine(size);
-// System.Console.WriteLine("Stop"); 
+
+  !!!! Определение количества символов в введенной цифре.
+
+   System.Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int size = 0;
+while (num >= 1)
+{
+num = num / 10;          
+ size = size + 1;
+}
+System.Console.WriteLine(size);
+System.Console.WriteLine("Stop"); 
